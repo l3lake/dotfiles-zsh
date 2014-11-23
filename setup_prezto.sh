@@ -13,7 +13,7 @@ dir=~/.dotfiles-zsh
 olddir=~/.dotfiles-zsh-old
 
 # list of files/folders to symlink in homedir
-files="zpreztorc zshrc"
+files="zpreztorc zshrc vimrc.after vimrc.before gitconfig gitignore_global"
 
 ##########
 
