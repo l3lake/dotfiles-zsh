@@ -1,0 +1,43 @@
+[user]
+  name = Blake Anderson
+  email = EMAIL
+[color]
+  ui = true
+[github]
+  user = l3lake
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[alias]
+  #Basic
+  st = status -sb
+  co = checkout
+
+  #Flow
+  fs = flow feature start
+  ff = flow feature finish
+
+  #Infoz
+  count = shortlog -sn
+  df = vimdiff --color
+  wdf = diff --word-diff --color
+  fdf = diff --name-only --color
+  br = branch -a
+  sh = show --pretty=format: --name-only
+
+  #Log
+  last = log -1 HEAD
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+  #Push/pull/commit
+  pdev = push origin develop
+  udev = pull origin develop
+  amend = commit --amend
+  cm = commit
+  cmm = commit -m
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[difftool]
+  prompt = false
