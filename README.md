@@ -13,12 +13,12 @@ Make the scripts executable `chmod +x .dotfiles-zsh/add*.sh .dotfiles-zsh/setup*
 
 ## Ubuntu Setup
 
-**Add user only**
+*Add user only*
 
 1. Edit variables in `vi .dotfiles-zsh/adduser.sh`
 2. Run `./.dotfiles-zsh/adduser.sh`
 
-**The whole kaboodle**
+*The whole kaboodle*
 
 1. Edit variables in `vi .dotfiles-zsh/setup_ubuntu.sh`
 1. Run `./.dotfiles-zsh/setup_ubuntu.sh`
