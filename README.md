@@ -9,7 +9,7 @@ Make the scripts executable `chmod +x .dotfiles-zsh/add*.sh .dotfiles-zsh/setup*
 ## Prezto Setup
 
 1. Ensure variables in `vi .dotfiles-zsh/setup_prezto.sh` are correct
-1. Run `./makesymlinks.sh`
+1. Run `./.dotfiles-zsh/makesymlinks.sh`
 
 ## Ubuntu Setup
 
