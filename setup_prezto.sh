@@ -13,7 +13,7 @@ dir=~/.dotfiles-zsh
 olddir=~/.dotfiles-zsh-old
 
 # list of files/folders to symlink in homedir
-files="zprezto zshrc"
+files="zpreztorc zshrc"
 
 ##########
 
