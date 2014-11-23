@@ -27,7 +27,8 @@ Make the scripts executable `chmod +x .dotfiles-zsh/add*.sh .dotfiles-zsh/setup*
 ## Docker Setup
 
 1. Edit variable in `vi .dotfiles-zsh/add_user_docker.sh`
-1. Logout and login to server
+1. Run `./.dotfiles-zsh/add_user_docker.sh`
+2. 1. Logout and login to server
 
 ## Vim Setup
 
