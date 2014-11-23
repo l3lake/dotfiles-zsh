@@ -128,7 +128,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'pattern' \
   'cursor' \
   'root'
-Set syntax highlighting styles.
+# Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
   'builtin' 'bg=blue' \
   'command' 'bg=blue' \
@@ -141,10 +141,10 @@ zstyle ':prezto:module:syntax-highlighting' styles \
 # Auto set the tab and window titles.
 zstyle ':prezto:module:terminal' auto-title 'yes'
 
-Set the window title format.
+# Set the window title format.
 zstyle ':prezto:module:terminal:window-title' format '%n@%m: %s'
 
-Set the tab title format.
+# Set the tab title format.
 zstyle ':prezto:module:terminal:tab-title' format '%m: %s'
 
 #
