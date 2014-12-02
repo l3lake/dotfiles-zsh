@@ -39,6 +39,7 @@ set showcmd                     "Show (partial) command in the status line
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>x :x!<cr>
+nmap <leader>ww w !sudo tee % >/dev/null  " Save as sudo
 
 " Down is really the next line
 nnoremap j gj
