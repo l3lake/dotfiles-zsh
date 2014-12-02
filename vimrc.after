@@ -140,8 +140,11 @@ nnoremap <leader><leader> <c-^>
 nmap <leader>nt :tabe<cr>
 
 " Quickly go forward or backward b/t tabs
-nmap <leader>tp gt<cr>
-nmap <leader>tn gT<cr>
+"nmap <leader>tp gt<cr>
+"nmap <leader>tn gT<cr>
+" Quickly go forward or backward b/t tabs
+nmap <leader>th gt<cr>
+nmap <leader>tl gT<cr>
 
 " Quickly turn off highlights
 "nnoremap <leader><space> :noh<cr>
