@@ -39,7 +39,23 @@ set showcmd                     "Show (partial) command in the status line
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>x :x!<cr>
-nmap <leader>ww w !sudo tee % >/dev/null  " Save as sudo
+
+" Fast sudo save
+" From http://stackoverflow.com/questions/1005/getting-root-permissions-on-a-file-inside-of-vi
+" General Commands: User Ex commands.
+    command W call WriteAsSuperUser(@%)         " Write file as super-user.
+" Helper Functions: Used by user Ex commands. {{{1
+    function GetNullDevice() " Gets the path to the null device. {{{2
+        if filewritable('/dev/null')
+            return '/dev/null'
+        else
+            return 'NUL'
+        endif
+    endfunction
+
+    function WriteAsSuperUser(file) " Write buffer to a:file as the super user (on POSIX, root). {{{2
+        exec '%write !sudo tee ' . shellescape(a:file, 1) . ' >' . GetNullDevice()
+    endfunction
 
 " Down is really the next line
 nnoremap j gj
